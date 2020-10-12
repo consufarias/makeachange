@@ -1,0 +1,39 @@
+.my-container {
+  display: flex;
+  justify-content: center;
+}
+.my-carousel {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.carousel-content {
+  background-color: rgba(100, 100, 100, 0.8);
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: end;
+}
+.color {
+  background-color: khaki;
+}
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+.options-button {
+  font-weight: bold;
+  font-size: 22px;
+  width: 40%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 4px;
+}

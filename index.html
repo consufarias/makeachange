@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Make a change</title>
+  </head>
+  <body background="fondo.jpg">
+    <div class="card-panel teal lighten-2"></div>
+    <h1 class="h1"><img src="logo.jpg" width="300" height="300" /></h1>
+
+    <!-- Carrusel de fotos -->
+    <div class="my-container">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide my-carousel"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/CONTAM.jpg"
+              width="100"
+              height="800"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block carousel-content">
+              <h4>Mar Sucio</h4>
+              <p>
+                Esta imagen chocante presenta el efecto de la contaminacion y
+                sobreproduccion en nuestros preciosos mares. El 40% de los
+                océanos del planeta están llenos de residuos plásticos que matan
+                a 100.000 mamíferos marinos cada año.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://lh3.googleusercontent.com/-1Q1jTucxzDE/VSmBeJjNXzI/AAAAAAAAF38/VMZDngRRPSU/s640/blogger-image-1180069516.jpg"
+              width="100"
+              height="800"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block carousel-content">
+              <h4>Sobrepruccion de leche</h4>
+              <p>
+                Muchas vacas son sobreexplotadas para producir su leche y carne,
+                cada dia.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://desinformemonos.org/wp-content/uploads/2019/03/ninostranportanagua_colombia-13187.jpg"
+              width="100"
+              height="800"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block carousel-content">
+              <h4>Escasez de agua</h4>
+              <p>
+                Para solo hacer una camiseta de algodón se necesitan 2.700
+                litros de agua, mientras gente lucha día a día por un solo vaso.
+                Lo cual lleva a que alrededor de 120 millones de personas en el
+                mundo tienen escasez de agua, si seguimos así, la demanda de
+                agua dulce superará el 40% de los recursos viables.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- container de botones -->
+    <div class="options-container">
+      <div class="btn-group options-button">
+        <div class="mx-auto" style="width: 90%">
+          Tiendas que reciben ropa usada
+        </div>
+        <button
+          type="button"
+          class="btn btn- color dropdown-toggle-split"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="border-radius: 5px"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-menu-down"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://www.paris.cl" target="_blank"
+            >Paris</a
+          >
+          <a
+            class="dropdown-item"
+            href="https://www.falabella.cl"
+            target="_blank"
+            >Falabella</a
+          >
+          <a class="dropdown-item" href="https://www2.hm.com/" target="_blank"
+            >H&M</a
+          >
+        </div>
+      </div>
+
+      <div class="btn-group options-button">
+        <div class="mx-auto" style="width: 90%">
+          Utensilios basicos biodegradables
+        </div>
+        <button
+          type="button"
+          class="btn btn- color dropdown-toggle-split"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="border-radius: 5px"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-menu-down"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <a
+            class="dropdown-item"
+            href="https://ecotiendanatural.cl/193-cepillo-dental?q=Marca-THE+HUMBLE+CO"
+            target="_blank"
+            >Cepillo de Dientes Bamboo</a
+          >
+          <a
+            class="dropdown-item"
+            href="https://articulo.mercadolibre.cl/MLC-487836658-libreta-ecologica-con-tapas-duras-de-carton-reciclado-_JM?matt_tool=46539294&matt_word&matt_source=google&matt_campaign_id=9860914691&matt_ad_group_id=100627545792&matt_match_type&matt_network=u&matt_device=c&matt_creative=431273678350&matt_keyword&matt_ad_position&matt_ad_type&matt_merchant_id=235119843&matt_product_id=MLC487836658&matt_product_partition_id=896802518787&matt_target_id=pla-896802518787&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyZ7abQxabdlEG4mfE93YnITNzHRtYx1WNUwewBXLHxslc0bvMDcMzIaAnwxEALw_wcB&quantity=1"
+            target="_blank"
+            >Cuadernos Reciclados</a
+          >
+          <a
+            class="dropdown-item"
+            href="https://www.natura.cl/p/bombillas-reutilizables-creer-para-ver/69452cl?consultoria=consuelofarias&ds_rl=1282750&ds_rl=1282801&ds_rl=1282801&gclid=Cj0KCQjw2or8BRCNARIsAC_ppyasDdYFAyaC_CD9lPoLlSw9u59BptzRq7a8SOtLkbOGZqpvp4Ia1ZsaAuSCEALw_wcB&gclsrc=aw.ds&utm_term=69452cl"
+            target="_blank"
+            >Bombillas de metal</a
+          >
+        </div>
+      </div>
+
+      <div class="btn-group options-button">
+        <div class="mx-auto" style="width: 90%">Alimentos sostenibles</div>
+        <button
+          type="button"
+          class="btn btn- color dropdown-toggle-split"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="border-radius: 5px"
+        >
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-menu-down"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="dropdown-menu">
+          <a
+            class="dropdown-item"
+            href="https://www.notco.com/index"
+            target="_blank"
+            >Not Co</a
+          >
+          <a
+            class="dropdown-item"
+            href="https://www.semillasorganicas.cl/"
+            target="_blank"
+            >Semillas Organicas</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- link -->
+
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="https://estag.fimagenes.com/img/1/3/W/k/c/3Wkc_900.png"
+          height="287"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Arma tu huerto</h5>
+          <p class="card-text">
+            Aquí encontrarás un perfecta guía con indicaciones para hacer un
+            huerto, con el cual podrás producir responsablemente tu consumo
+            diario de alimentos básicos.
+          </p>
+          <a
+            href="https://blog.oxfamintermon.org/como-hacer-un-huerto-urbano-paso-a-paso/"
+            class="btn btn-primary"
+            >Ir al huerto...</a
+          >
+          <p class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.zaragozarecicla.org/wp-content/uploads/2020/01/las_tres_erres_del_reciclaje.jpg"
+          height="287"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Recicla desde tu hogar</h5>
+          <p class="card-text">
+            Aquí encontrarás una perfecta guía para reciclar desde tu casa
+            disminuyendo la contaminación del planeta.
+          </p>
+          <a
+            href="https://www.ecologiaverde.com/como-reciclar-la-basura-en-casa-1569.html"
+            class="btn btn-primary"
+            >Ir a la guia...</a
+          >
+          <p class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://resizer.iproimg.com/unsafe/880x/https://assets.iproup.com/assets/jpg/2020/02/8434.jpg?6.0.2"
+          width="100"
+          height="287"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Deja tu emprendimiento</h5>
+          <p class="card-text">
+            Ingresa a nuestro instagram para publicar y conocer emprendimientos
+            pro ambientes en la V región. Solo envíanos un mensaje y nosostros
+            te añadiremos de inmediato.
+          </p>
+          <a
+            href="https://instagram.com/deja_tu_emprendimiento?igshid=1mjw0voblc8v7"
+            class="btn btn-primary"
+            >Ir al instagram...</a
+          >
+          <p class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.trecebits.com/wp-content/uploads/2019/11/Google-Maps.jpg"
+          width="100"
+          height="287"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Conoce los puntos limpios</h5>
+          <p class="card-text">
+            En estos lugares conocidos de la V región podrás ir a reciclar tus
+            desechos correctamente separados (prueba nuestra guía de reciclaje)
+            y ayudar al planeta por un futuro mejor.
+          </p>
+          <a
+            href="https://www.google.cl/maps/search/punto+limpio/@-32.9678639,-71.5852887,12z/data=!3m1!4b1"
+            class="btn btn-primary"
+            >Ir al mapa...</a
+          >
+          <p class="card-text">
+            <small class="text-muted"></small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <p class="text-center">
+      Este proyecto quiere fomentar el consumo y la producción responsables en
+      ayuda a la ODS12
+    </p>
+    <p class="text-center">
+      Grupo 2: Trinidad Berenguer, Consuelo Farías, Bastian Villalobos,
+      Constanza Brevis
+    </p>
+  </body>
+</html>
+<!-- proyecto de ayuda al ODS12, en contra de la produccion y consumo irresponsables-->
